@@ -43,7 +43,7 @@
 	</div>
 	
 	{#if !displayJumpscare}
-		<input type="button" value="click me" on:click={() => {huhWeird = true; setTimeout(() => {displayJumpscare=true;huhWeird=false}, Math.random()*4000+3000)}}>
+		<input type="button" value="don't click me" on:click={() => {huhWeird = true; setTimeout(() => {displayJumpscare=true;huhWeird=false}, Math.random()*4000+3000)}}>
 	{/if}
 
 	{#if huhWeird}
