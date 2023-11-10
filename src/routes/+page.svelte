@@ -2,9 +2,9 @@
     import { onMount } from 'svelte';
 
 
-	export let data;
+	// export let data;
 
-	let dummyData = data.dummyData;
+	// let dummyData = data.dummyData;
 	// let displayJumpscare = false;
 
 	// onMount(() => setTimeout(() => displayJumpscare = true, 2500))
@@ -12,11 +12,13 @@
 </script>
 
 <main>
-	{#each dummyData as onePieceOfInformation}
+
+	:)
+	<!-- {#each dummyData as onePieceOfInformation}
 		<div class="one-piece">
 			{JSON.stringify(onePieceOfInformation)}
 		</div>
-	{/each}
+	{/each} -->
 
 	<!-- {#if displayJumpscare}
 		<img src="https://media.tenor.com/u4x8IHSNnqkAAAAi/fnaf-jump-scare.gif" alt="jumpscare... bitch!" />
