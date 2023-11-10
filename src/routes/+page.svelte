@@ -5,9 +5,9 @@
 	// export let data;
 
 	// let dummyData = data.dummyData;
-	// let displayJumpscare = false;
+	let displayJumpscare = false;
 
-	// onMount(() => setTimeout(() => displayJumpscare = true, 2500))
+	onMount(() => setTimeout(() => displayJumpscare = true, 2500))
 
 </script>
 
@@ -20,9 +20,9 @@
 		</div>
 	{/each} -->
 
-	<!-- {#if displayJumpscare}
+	{#if displayJumpscare}
 		<img src="https://media.tenor.com/u4x8IHSNnqkAAAAi/fnaf-jump-scare.gif" alt="jumpscare... bitch!" />
 		<audio autoplay src="/jumpscare.mp3"></audio>
 		{setTimeout(() => displayJumpscare = false, 475).toString().slice(0,0)}
-	{/if} -->
+	{/if}
 </main>
