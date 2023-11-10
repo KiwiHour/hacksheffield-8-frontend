@@ -1,10 +1,12 @@
+import TodoItem from "$lib/api-interfaces/TodoItem";
 import type { PageLoad } from "./$types";
-import DummyData from "$lib/DummyData";
 
 export const load: PageLoad = async ({ }) => {
 
-	let dummyDataGetter = new DummyData();
+	console.log("lol")
+	let todoItem = new TodoItem()
+
 	return {
-		dummyData: await dummyDataGetter.getData()
+		dummyData: await todoItem.getData()
 	};
 };
