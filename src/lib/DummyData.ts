@@ -1,15 +1,12 @@
-import type ApiInterface from "./ApiInterface";
+import ApiInterface from "./ApiInterface";
 
-export interface IDummyData {
+interface IDummyData {
 	id: number
 	name: string
 }
 
-export class DummyData {
-	constructor(private apiInterface: ApiInterface) { }
-
+export default class DummyData extends ApiInterface {
 	public async getData() {
-		return await this.apiInterface.fetch("test") as IDummyData[];
+		return await this.fetch("test") as IDummyData[];
 	}
-
 }
