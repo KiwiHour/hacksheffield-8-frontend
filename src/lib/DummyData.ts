@@ -1,11 +1,11 @@
 import type ApiInterface from "./ApiInterface";
 
-interface IDummyData {
+export interface IDummyData {
 	id: number
 	name: string
 }
 
-export default class DummyData {
+export class DummyData {
 	constructor(private apiInterface: ApiInterface) { }
 
 	public async getData() {
