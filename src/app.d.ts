@@ -6,9 +6,9 @@ import type ApiInterface from "$lib/ApiInterface";
 declare global {
 	namespace App {
 		// interface Error {}
-		// interface Locals {
-		// 	apiInterface: ApiInterface
-		// }
+		interface Locals {
+			apiInterface: ApiInterface
+		}
 		// interface PageData {}
 		// interface Platform {}
 	}
