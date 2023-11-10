@@ -16,7 +16,8 @@ const config = {
             assets: "./dist",
             fallback: "index.html"
 		})
-	}
+	},
+	vite: {}
 };
 
 export default config;
